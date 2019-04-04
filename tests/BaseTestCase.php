@@ -13,11 +13,14 @@ abstract class BaseTestCase extends TestCase
     public function examples()
     {
         return [
-            'multiply array items by 2' => [
+            // basic 'map' example: multiply each array item by 2
+            [
                 'multiply_by_two',
                 [1, 8, 91],
                 [2, 16, 182],
             ],
+
+            // collect values from two different properties of each item, take only unique ones
             [
                 'routes_to_unique_cities',
                 [
@@ -29,6 +32,8 @@ abstract class BaseTestCase extends TestCase
                 ],
                 ['Paris', 'London', 'Prague', 'Moscow'],
             ],
+
+            // take part of a string, change it from ClassCamelCase to methodCamelCase
             [
                 'class_to_method_name',
                 'Namespace1\Namespace2\Namespace3\SomeMethod',
