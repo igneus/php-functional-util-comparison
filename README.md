@@ -13,7 +13,9 @@ This test suite should help find an answer.
 
 ## Project structure
 
-
+`tests/BaseTestCase.php` defines test cases, each other file in the `tests/` directory
+provides their implementation using one of the compared libraries
+(and PHP standard library as necessary).
 
 ## Usage
 
