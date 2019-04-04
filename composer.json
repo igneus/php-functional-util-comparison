@@ -4,6 +4,7 @@
     "type": "project",
     "license": "CC0",
     "require": {
+        "php": ">=7.0",
         "phpunit/phpunit": "^8.0",
         "ihor/nspl": "^1.3",
         "lodash-php/lodash-php": "^0.0.6",

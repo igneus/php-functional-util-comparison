@@ -3,6 +3,7 @@
 namespace Tests;
 
 use _;
+use Tests\Toys\Route;
 
 /**
  * lodash-php/lodash-php
@@ -17,5 +18,15 @@ class LodashPhpTest extends BaseTestCase
                 return $i * 2;
             }
         );
+    }
+
+    public function routes_to_unique_cities(array $input)
+    {
+        return array_values(array_unique(_\flatMap(
+            $input,
+            function (Route $route) {
+                return [$route->getFrom(), $route->getTo()];
+            }
+        )));
     }
 }
