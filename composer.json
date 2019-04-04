@@ -1,0 +1,7 @@
+{
+    "name": "igneus/functional-util-test",
+    "description": "quest for The Best Functional Utility Library (TM)",
+    "type": "project",
+    "license": "CC0",
+    "require": {}
+}
