@@ -12,7 +12,7 @@ abstract class BaseTestCase extends TestCase
     public function examples()
     {
         return [
-            'multiply by two' => [
+            'multiply array items by two' => [
                 'multiply_by_two',
                 [1, 8, 91],
                 [2, 16, 182],
