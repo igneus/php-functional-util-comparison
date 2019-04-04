@@ -33,4 +33,13 @@ class FunctionalPhpTest extends BaseTestCase
             'array_values'
         )($input);
     }
+
+    public function class_to_method_name(string $className)
+    {
+        return F\compose(
+            F\partial_left('explode', '\\'),
+            F\partial_left('\Functional\last'),
+            'lcfirst'
+        )($className);
+    }
 }

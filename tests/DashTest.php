@@ -12,10 +12,10 @@ class DashTest extends BaseTestCase
 {
     public function multiply_by_two(array $input)
     {
-        return Dash\chain($input) // no method suggestions in PHPStorm!
-            ->map(function (int $i) {
-                return $i * 2;
-            })
+        return Dash\chain($input)// no method suggestions in PHPStorm!
+        ->map(function (int $i) {
+            return $i * 2;
+        })
             ->value();
     }
 
@@ -32,6 +32,20 @@ class DashTest extends BaseTestCase
                 return array_unique($cities);
             })
             ->values()
+            ->value();
+    }
+
+    public function class_to_method_name(string $className)
+    {
+        return Dash\chain($className)
+            ->thru(function (string $str) {
+                return explode('\\', $str);
+            })
+            ->last()
+            // ->call('lcfirst') cannot be used, 'lcfirst' doesn't pass the 'callable' annotation
+            ->thru(function (string $str) {
+                return lcfirst($str);
+            })
             ->value();
     }
 }

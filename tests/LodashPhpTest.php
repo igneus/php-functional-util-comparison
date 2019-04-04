@@ -29,4 +29,9 @@ class LodashPhpTest extends BaseTestCase
             }
         )));
     }
+
+    public function class_to_method_name(string $className)
+    {
+        return _\lowerFirst(_\last(explode('\\', $className)));
+    }
 }

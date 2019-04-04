@@ -31,4 +31,14 @@ class NsplTest extends BaseTestCase
             'array_values' // reset keys
         );
     }
+
+    public function class_to_method_name(string $className)
+    {
+        return f\pipe(
+            $className,
+            f\partial('explode', '\\'),
+            a\last,
+            'lcfirst'
+        );
+    }
 }

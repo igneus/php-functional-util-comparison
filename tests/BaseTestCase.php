@@ -28,7 +28,12 @@ abstract class BaseTestCase extends TestCase
                     new Route('Moscow', 'London'),
                 ],
                 ['Paris', 'London', 'Prague', 'Moscow'],
-            ]
+            ],
+            [
+                'class_to_method_name',
+                'Namespace1\Namespace2\Namespace3\SomeMethod',
+                'someMethod'
+            ],
         ];
     }
 
