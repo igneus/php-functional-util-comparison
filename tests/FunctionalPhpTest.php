@@ -24,7 +24,7 @@ class FunctionalPhpTest extends BaseTestCase
     {
         return F\compose(
             F\partial_right(
-                '\Functional\flat_map', // lack of constants matching function names hurts
+                '\Functional\flat_map', // lack of constants matching function names hurts when composing
                 function (Route $route) {
                     return [$route->getFrom(), $route->getTo()];
                 }
