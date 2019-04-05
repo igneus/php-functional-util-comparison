@@ -6,8 +6,9 @@ This test suite should help find an answer.
 
 ## Libraries compared
 
-* [ihor/nspl](https://github.com/ihor/nspl)
 * [dusank/knapsack](https://github.com/DusanKasan/Knapsack)
+* [ihor/nspl](https://github.com/ihor/nspl)
+* [kilbiller/fphp](https://github.com/kilbiller/fphp)
 * [lambdish/phunctional](https://github.com/Lambdish/phunctional)
 * [lodash-php/lodash-php](https://github.com/lodash-php/lodash-php)
 * [lstrojny/functional-php](https://github.com/lstrojny/functional-php)
