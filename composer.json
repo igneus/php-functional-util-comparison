@@ -12,7 +12,8 @@
         "mpetrovich/dash": "^2.0",
         "symfony/var-dumper": "^4.2",
         "lambdish/phunctional": "^1.0",
-        "codedungeon/phpunit-result-printer": "^0.26.2"
+        "codedungeon/phpunit-result-printer": "^0.26.2",
+        "dusank/knapsack": "^10.0"
     },
     "autoload": {
         "psr-4": {
