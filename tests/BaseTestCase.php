@@ -39,6 +39,13 @@ abstract class BaseTestCase extends TestCase
                 'Namespace1\Namespace2\Namespace3\SomeMethod',
                 'someMethod'
             ],
+
+            // split strings, cast them to integers and calculate
+            [
+                'timestamps_to_seconds',
+                ['00:00:00', '00:01:30', '01:00:02', '19:55:48'],
+                [0, 90, 3602, 71748],
+            ],
         ];
     }
 

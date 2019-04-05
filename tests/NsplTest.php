@@ -41,4 +41,23 @@ class NsplTest extends BaseTestCase
             'lcfirst'
         );
     }
+
+    public function timestamps_to_seconds(array $timestamps)
+    {
+        return a\map(
+            f\rpartial(
+                f\pipe,
+                f\partial('explode', ':'),
+                f\partial(a\map, op\int),
+                'array_reverse',
+                f\rpartial(a\zip, [0, 1, 2]), // nspl doesn't expose collection indices
+                f\partial(a\map, function ($pair) {
+                    list($num, $exponent) = $pair;
+                    return $num * (60 ** $exponent);
+                }),
+                'array_sum'
+            ),
+            $timestamps
+        );
+    }
 }

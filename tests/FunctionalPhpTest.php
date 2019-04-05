@@ -42,4 +42,23 @@ class FunctionalPhpTest extends BaseTestCase
             'lcfirst'
         )($className);
     }
+
+    public function timestamps_to_seconds(array $timestamps)
+    {
+        return F\map(
+            $timestamps,
+            F\compose(
+                F\partial_left('explode', ':'),
+                F\partial_right('Functional\map', function (string $numStr) {
+                    // F\partial_right('Functional\map', 'intval') cannot be used, fails on function arity
+                    return (int)$numStr;
+                }),
+                'array_reverse',
+                F\partial_right('Functional\map', function (int $num, int $index) { // 'map' with index is useful
+                    return $num * (60 ** $index);
+                }),
+                'array_sum'
+            )
+        );
+    }
 }
