@@ -10,7 +10,9 @@
         "lodash-php/lodash-php": "^0.0.6",
         "lstrojny/functional-php": "^1.9",
         "mpetrovich/dash": "^2.0",
-        "symfony/var-dumper": "^4.2"
+        "symfony/var-dumper": "^4.2",
+        "lambdish/phunctional": "^1.0",
+        "codedungeon/phpunit-result-printer": "^0.26.2"
     },
     "autoload": {
         "psr-4": {

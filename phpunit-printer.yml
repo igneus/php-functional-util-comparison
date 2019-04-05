@@ -1,0 +1,7 @@
+---
+options:
+  cd-printer-hide-class: false
+  cd-printer-simple-output: true
+  cd-printer-show-config: false
+  cd-printer-hide-namespace: true
+  cd-printer-anybar: false
