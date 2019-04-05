@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "913fa9a8334cbb3899a33578c8acba44",
+    "content-hash": "5678e0a489dba9b7ad84053a561f98de",
     "packages": [
         {
             "name": "2bj/phanybar",
@@ -386,6 +386,81 @@
                 "zip"
             ],
             "time": "2019-03-21T20:38:30+00:00"
+        },
+        {
+            "name": "kilbiller/fphp",
+            "version": "v1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kilbiller/fphp.git",
+                "reference": "ae48191c1be5cf608ed3e4fe1b0e11e53c1e8eea"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kilbiller/fphp/zipball/ae48191c1be5cf608ed3e4fe1b0e11e53c1e8eea",
+                "reference": "ae48191c1be5cf608ed3e4fe1b0e11e53c1e8eea",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "consistence/coding-standard": "^2.1",
+                "kahlan/kahlan": "^3.1",
+                "squizlabs/php_codesniffer": "^3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "fphp\\": "src/"
+                },
+                "files": [
+                    "src/utils/reflexify.php",
+                    "src/compose.php",
+                    "src/concat.php",
+                    "src/curry.php",
+                    "src/curry1.php",
+                    "src/curry2.php",
+                    "src/curry3.php",
+                    "src/curryN.php",
+                    "src/every.php",
+                    "src/filter.php",
+                    "src/find.php",
+                    "src/first.php",
+                    "src/flatMap.php",
+                    "src/flatten.php",
+                    "src/flip.php",
+                    "src/flow.php",
+                    "src/identity.php",
+                    "src/includes.php",
+                    "src/join.php",
+                    "src/last.php",
+                    "src/map.php",
+                    "src/negate.php",
+                    "src/none.php",
+                    "src/not.php",
+                    "src/prop.php",
+                    "src/reduce.php",
+                    "src/reject.php",
+                    "src/reverse.php",
+                    "src/some.php",
+                    "src/uniq.php",
+                    "src/uniqWith.php",
+                    "src/zip.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rémy Peru",
+                    "email": "peru.remy@gmail.com"
+                }
+            ],
+            "description": "A set of auto-curried immutable data-last functions for PHP. Inspired by lodash/fp.",
+            "time": "2017-10-27T09:21:19+00:00"
         },
         {
             "name": "lambdish/phunctional",
