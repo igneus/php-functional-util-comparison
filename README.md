@@ -14,6 +14,7 @@ This test suite should help find an answer.
 * [lodash-php/lodash-php](https://github.com/lodash-php/lodash-php)
 * [lstrojny/functional-php](https://github.com/lstrojny/functional-php)
 * [mpetrovich/dash](https://github.com/mpetrovich/dash)
+* [phamda/phamda](https://github.com/mpajunen/phamda)
 
 ## Project structure
 

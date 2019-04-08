@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ee7ab64361e9075cef4da719963c7556",
+    "content-hash": "ae5975f159323e86a9badff321962afa",
     "packages": [
         {
             "name": "2bj/phanybar",
@@ -1092,6 +1092,52 @@
                 "object graph"
             ],
             "time": "2018-06-11T23:09:50+00:00"
+        },
+        {
+            "name": "phamda/phamda",
+            "version": "0.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mpajunen/phamda.git",
+                "reference": "c4ad9490b536936baf601aa82a4fd88608837f62"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mpajunen/phamda/zipball/c4ad9490b536936baf601aa82a4fd88608837f62",
+                "reference": "c4ad9490b536936baf601aa82a4fd88608837f62",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.1",
+                "nikic/php-parser": "^3.0",
+                "phpunit/phpunit": "^6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Phamda\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mikael Pajunen",
+                    "email": "mikael.pajunen@gmail.com"
+                }
+            ],
+            "description": "Auto-curried function library",
+            "keywords": [
+                "compose",
+                "curry",
+                "functional"
+            ],
+            "time": "2017-03-26T22:03:59+00:00"
         },
         {
             "name": "phar-io/manifest",
