@@ -7,6 +7,7 @@ This test suite should help find an answer.
 ## Libraries compared
 
 * [dusank/knapsack](https://github.com/DusanKasan/Knapsack)
+* [grrr-amsterdam/garp-functional](https://github.com/grrr-amsterdam/garp-functional)
 * [ihor/nspl](https://github.com/ihor/nspl)
 * [kilbiller/fphp](https://github.com/kilbiller/fphp)
 * [lambdish/phunctional](https://github.com/Lambdish/phunctional)

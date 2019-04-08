@@ -14,7 +14,8 @@
         "lambdish/phunctional": "^1.0",
         "codedungeon/phpunit-result-printer": "^0.26.2",
         "dusank/knapsack": "^10.0",
-        "kilbiller/fphp": "^1.0"
+        "kilbiller/fphp": "^1.0",
+        "grrr-amsterdam/garp-functional": "^3.0"
     },
     "autoload": {
         "psr-4": {

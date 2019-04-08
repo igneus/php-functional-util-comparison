@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5678e0a489dba9b7ad84053a561f98de",
+    "content-hash": "ee7ab64361e9075cef4da719963c7556",
     "packages": [
         {
             "name": "2bj/phanybar",
@@ -261,6 +261,136 @@
                 "sequences"
             ],
             "time": "2017-04-24T22:52:29+00:00"
+        },
+        {
+            "name": "grrr-amsterdam/garp-functional",
+            "version": "v3.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/grrr-amsterdam/garp-functional.git",
+                "reference": "130a833432d77e1e82637889b2d955e62eb8f5df"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/grrr-amsterdam/garp-functional/zipball/130a833432d77e1e82637889b2d955e62eb8f5df",
+                "reference": "130a833432d77e1e82637889b2d955e62eb8f5df",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "require-dev": {
+                "codedungeon/phpunit-result-printer": "*",
+                "nesbot/carbon": "^1.24",
+                "phpunit/phpunit": "^5.7",
+                "squizlabs/php_codesniffer": "^2.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Garp\\Functional\\Internal\\": "_internal/",
+                    "Garp\\Functional\\Types\\": "types/"
+                },
+                "files": [
+                    "functions/add.php",
+                    "functions/always.php",
+                    "functions/autocurry.php",
+                    "functions/binary.php",
+                    "functions/both.php",
+                    "functions/call.php",
+                    "functions/compose.php",
+                    "functions/concat.php",
+                    "functions/concat_right.php",
+                    "functions/concat_with.php",
+                    "functions/contains.php",
+                    "functions/count.php",
+                    "functions/divide.php",
+                    "functions/drop.php",
+                    "functions/drop_while.php",
+                    "functions/either.php",
+                    "functions/entries.php",
+                    "functions/equals.php",
+                    "functions/every.php",
+                    "functions/filter.php",
+                    "functions/find.php",
+                    "functions/find_index.php",
+                    "functions/flatten.php",
+                    "functions/flip.php",
+                    "functions/group_by.php",
+                    "functions/gt.php",
+                    "functions/gte.php",
+                    "functions/head.php",
+                    "functions/id.php",
+                    "functions/index_by.php",
+                    "functions/instance.php",
+                    "functions/is_assoc.php",
+                    "functions/is_callable_function.php",
+                    "functions/is_reduced.php",
+                    "functions/join.php",
+                    "functions/keys.php",
+                    "functions/keys_where.php",
+                    "functions/last.php",
+                    "functions/lt.php",
+                    "functions/lte.php",
+                    "functions/map.php",
+                    "functions/match.php",
+                    "functions/merge_at.php",
+                    "functions/merge_after.php",
+                    "functions/modulo.php",
+                    "functions/multiply.php",
+                    "functions/none.php",
+                    "functions/not.php",
+                    "functions/omit.php",
+                    "functions/once.php",
+                    "functions/partial.php",
+                    "functions/partial_right.php",
+                    "functions/pick.php",
+                    "functions/pipe.php",
+                    "functions/prop.php",
+                    "functions/prop_equals.php",
+                    "functions/prop_in.php",
+                    "functions/prop_of.php",
+                    "functions/prop_set.php",
+                    "functions/publish.php",
+                    "functions/reduce.php",
+                    "functions/reduce_assoc.php",
+                    "functions/reduced.php",
+                    "functions/reindex.php",
+                    "functions/reject.php",
+                    "functions/rename_keys.php",
+                    "functions/repeat.php",
+                    "functions/replace.php",
+                    "functions/some.php",
+                    "functions/sort.php",
+                    "functions/sort_by.php",
+                    "functions/sort_by_map.php",
+                    "functions/split.php",
+                    "functions/subtract.php",
+                    "functions/tail.php",
+                    "functions/take.php",
+                    "functions/take_while.php",
+                    "functions/tap.php",
+                    "functions/truthy.php",
+                    "functions/unary.php",
+                    "functions/unique.php",
+                    "functions/usort.php",
+                    "functions/when.php",
+                    "functions/y.php",
+                    "functions/zip.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Harmen Janssen",
+                    "email": "harmen@grrr.nl"
+                }
+            ],
+            "description": "Utility library embracing functional programming paradigms.",
+            "time": "2019-02-13T21:02:02+00:00"
         },
         {
             "name": "hassankhan/config",
