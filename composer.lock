@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ae5975f159323e86a9badff321962afa",
+    "content-hash": "c39d4db901b6f58b2c4a9ee2e10dbaba",
     "packages": [
         {
             "name": "2bj/phanybar",
@@ -591,6 +591,65 @@
             ],
             "description": "A set of auto-curried immutable data-last functions for PHP. Inspired by lodash/fp.",
             "time": "2017-10-27T09:21:19+00:00"
+        },
+        {
+            "name": "krak/fn",
+            "version": "v0.1.30",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/krakphp/fn.git",
+                "reference": "824a44fd394771c3b7746915b69485d2411eb9d9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/krakphp/fn/zipball/824a44fd394771c3b7746915b69485d2411eb9d9",
+                "reference": "824a44fd394771c3b7746915b69485d2411eb9d9",
+                "shasum": ""
+            },
+            "require-dev": {
+                "krak/peridocs": "dev-master",
+                "lavoiesl/php-benchmark": "^1.4",
+                "nikic/php-parser": "v4.0.0beta1",
+                "peridot-php/leo": "^1.6",
+                "peridot-php/peridot": "^1.19",
+                "symfony/var-dumper": "^4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Krak\\Fn\\": "src"
+                },
+                "files": [
+                    "src/fn.php",
+                    "src/curried.generated.php",
+                    "src/consts.generated.php",
+                    "src/consts.ns.generated.php",
+                    "src/generate.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "RJ Garcia",
+                    "email": "rj@bighead.net"
+                }
+            ],
+            "description": "Functional library for php with proper currying",
+            "keywords": [
+                "curry",
+                "functional",
+                "partial-application",
+                "php"
+            ],
+            "time": "2019-02-21T00:40:23+00:00"
         },
         {
             "name": "lambdish/phunctional",

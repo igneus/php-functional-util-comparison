@@ -16,7 +16,8 @@
         "dusank/knapsack": "^10.0",
         "kilbiller/fphp": "^1.0",
         "grrr-amsterdam/garp-functional": "^3.0",
-        "phamda/phamda": "^0.7.0"
+        "phamda/phamda": "^0.7.0",
+        "krak/fn": "^0.1.30"
     },
     "autoload": {
         "psr-4": {

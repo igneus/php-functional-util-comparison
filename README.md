@@ -10,6 +10,7 @@ This test suite should help find an answer.
 * [grrr-amsterdam/garp-functional](https://github.com/grrr-amsterdam/garp-functional)
 * [ihor/nspl](https://github.com/ihor/nspl)
 * [kilbiller/fphp](https://github.com/kilbiller/fphp)
+* [krak/fn](https://github.com/krakphp/fn)
 * [lambdish/phunctional](https://github.com/Lambdish/phunctional)
 * [lodash-php/lodash-php](https://github.com/lodash-php/lodash-php)
 * [lstrojny/functional-php](https://github.com/lstrojny/functional-php)
