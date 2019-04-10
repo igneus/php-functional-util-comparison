@@ -25,10 +25,10 @@ class KrakFnTest extends BaseTestCase
     public function routes_to_unique_cities(array $input)
     {
         return k\pipe(
-            c\flatMap(function (Route $route) { // RED ALERT: entries get lost in this step! There is a bug somewhere!
+            c\flatMap(function (Route $route) {
                 return [$route->getFrom(), $route->getTo()];
             }),
-            'iterator_to_array', // flatMap, again, produces a generator
+            k\toArray, // flatMap, again, produces a generator
             'array_unique',
             'array_values' // reset keys
         )($input);
@@ -48,17 +48,17 @@ class KrakFnTest extends BaseTestCase
     public function timestamps_to_seconds(array $timestamps)
     {
         // the required amount of `iterator_to_array` is extreme here. Is there a better way to use this library?
-        return iterator_to_array(c\map(k\pipe(
+        return k\toArray(c\map(k\pipe(
             k\partial('explode', ':'),
             c\map('intval'),
-            'iterator_to_array',
+            k\toArray,
             'array_reverse',
             k\partial(k\zip, [0, 1, 2]),
             c\map(function ($pair) {
                 list($exponent, $num) = $pair;
                 return $num * (60 ** $exponent);
             }),
-            'iterator_to_array',
+            k\toArray,
             'array_sum'
         ))($timestamps));
     }
