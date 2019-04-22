@@ -22,6 +22,14 @@ This test suite should help find an answer.
         - function name constants for comfortable referencing
     - cons
         - functions split across several namespaces (import management becomes tedious)
+* [kapolos/pramda](https://github.com/kapolos/pramda)
+    - pros
+        - passes index to map
+    - cons
+        - no stable release yet
+        - `class P` not properly namespaced
+        - README says "P.S. 1: Automatically Curried Functions", but it's unfortunately not true for all functions where it would be useful
+        - very limited support for manual currying (see what `curryN()` really does)
 * [kilbiller/fphp](https://github.com/kilbiller/fphp)
     - pros
         - all functions curried (solves the problem of easy referencing without name constants)
