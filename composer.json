@@ -17,7 +17,8 @@
         "phamda/phamda": "^0.7.0",
         "krak/fn": "^0.1.30",
         "aerophant/ramda": "^0.0.3",
-        "kapolos/pramda": "dev-master"
+        "kapolos/pramda": "dev-master",
+        "daveross/functional-programming-utils": "^4.0"
     },
     "autoload": {
         "psr-4": {

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2c9a9717fd9998a5a2e7c45204519e73",
+    "content-hash": "e014067a64166483cd2846e229b3c138",
     "packages": [
         {
             "name": "2bj/phanybar",
@@ -204,6 +204,62 @@
                 "testing"
             ],
             "time": "2019-04-02T17:06:04+00:00"
+        },
+        {
+            "name": "daveross/functional-programming-utils",
+            "version": "4.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/daveross/functional-programming-utils.git",
+                "reference": "61b033e177472e53526bf1c0946b2f5c024a10b1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/daveross/functional-programming-utils/zipball/61b033e177472e53526bf1c0946b2f5c024a10b1",
+                "reference": "61b033e177472e53526bf1c0946b2f5c024a10b1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~5.0.0",
+                "squizlabs/php_codesniffer": "2.*"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/curry.php",
+                    "src/math.php",
+                    "src/memoize.php",
+                    "src/prop.php",
+                    "src/compose.php"
+                ],
+                "psr-4": {
+                    "DaveRoss\\FunctionalProgrammingUtils\\": "src/Monads"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dave Ross",
+                    "email": "dave@davidmichaelross.com",
+                    "homepage": "http://davidmichaelross.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Functional Programming utilities for PHP 5.4+",
+            "homepage": "https://github.com/daveross/functional-programming-utils",
+            "keywords": [
+                "curry",
+                "functional programming",
+                "functor",
+                "memoize"
+            ],
+            "time": "2016-05-23T18:59:34+00:00"
         },
         {
             "name": "doctrine/instantiator",

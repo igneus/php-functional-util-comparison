@@ -11,6 +11,11 @@ This test suite should help find an answer.
         - all functions curried (solves the problem of easy referencing without name constants)
     - cons
         - no documentation
+* [daveross/functional-programming-utils](https://github.com/daveross/functional-programming-utils)
+    - pros
+    - cons
+        - probably stalled (last commit 2016)
+        - no collection utilities (map, flatMap, flatten, ...)
 * [grrr-amsterdam/garp-functional](https://github.com/grrr-amsterdam/garp-functional)
     - pros
         - actively maintained
