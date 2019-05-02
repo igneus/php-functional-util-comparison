@@ -22,7 +22,7 @@ class GarpFunctionalTest extends BaseTestCase
             f\map(function (Route $route) {
                 return [$route->getFrom(), $route->getTo()];
             }),
-            'Garp\Functional\flatten', // is no curried ant there is no name constant
+            f\flatten,
             'array_unique',
             'array_values' // reset keys
         )($input);
@@ -32,7 +32,7 @@ class GarpFunctionalTest extends BaseTestCase
     {
         return f\pipe(
             f\partial('explode', '\\'),
-            'Garp\Functional\last',
+            f\last,
             'lcfirst'
         )($className);
     }
@@ -44,7 +44,7 @@ class GarpFunctionalTest extends BaseTestCase
                 f\partial('explode', ':'),
                 f\map('intval'),
                 'array_reverse',
-                f\partial_right('Garp\Functional\zip', [0, 1, 2]),
+                f\partial_right(f\zip, [0, 1, 2]),
                 f\map(function ($pair) {
                     list($num, $exponent) = $pair;
                     return $num * (60 ** $exponent);

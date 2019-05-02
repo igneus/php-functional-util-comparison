@@ -20,7 +20,6 @@ This test suite should help find an answer.
     - pros
         - actively maintained
     - cons
-        - function referencing is awkward (no name constants)
 * [ihor/nspl](https://github.com/ihor/nspl)
     - pros
         - actively maintained
