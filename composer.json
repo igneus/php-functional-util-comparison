@@ -15,7 +15,7 @@
         "kilbiller/fphp": "^1.0",
         "grrr-amsterdam/garp-functional": "^3.0",
         "phamda/phamda": "^0.7.0",
-        "krak/fn": "^0.1.30",
+        "krak/fn": "^1.0",
         "aerophant/ramda": "^0.0.3",
         "kapolos/pramda": "dev-master",
         "daveross/functional-programming-utils": "^4.0"
