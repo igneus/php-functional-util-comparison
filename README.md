@@ -1,5 +1,7 @@
 # PHP functional utility libraries - comparison
 
+[![Build Status](https://travis-ci.org/igneus/php-functional-util-comparison.svg?branch=master)](https://travis-ci.org/igneus/php-functional-util-comparison)
+
 Which of the "functional utility libraries" for PHP is
 most powerful/most flexible/most pleasant to work with?
 This test suite should help find an answer.
