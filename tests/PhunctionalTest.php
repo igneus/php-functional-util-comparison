@@ -23,10 +23,9 @@ class PhunctionalTest extends BaseTestCase
     public function routes_to_unique_cities(array $input)
     {
         return p\pipe(
-            p\partial('Lambdish\Phunctional\map', function (Route $route) {
+            p\partial('Lambdish\Phunctional\flat_map', function (Route $route) {
                 return [$route->getFrom(), $route->getTo()];
             }),
-            'Lambdish\Phunctional\flatten',
             'array_unique',
             'array_values' // reset keys
         )($input);
