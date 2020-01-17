@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "205b54707f6327fc07d182a3df95d5e4",
+    "content-hash": "97225dbcb45fcab9f67bb536e423e9ff",
     "packages": [
         {
             "name": "2bj/phanybar",
@@ -319,16 +319,16 @@
         },
         {
             "name": "grrr-amsterdam/garp-functional",
-            "version": "v3.1.1",
+            "version": "v4.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/grrr-amsterdam/garp-functional.git",
-                "reference": "df9e8c0e988faad4c75ebdc5d960b1582aa16bb9"
+                "reference": "0c2bbc98770927a85813764c20db2103619851a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/grrr-amsterdam/garp-functional/zipball/df9e8c0e988faad4c75ebdc5d960b1582aa16bb9",
-                "reference": "df9e8c0e988faad4c75ebdc5d960b1582aa16bb9",
+                "url": "https://api.github.com/repos/grrr-amsterdam/garp-functional/zipball/0c2bbc98770927a85813764c20db2103619851a9",
+                "reference": "0c2bbc98770927a85813764c20db2103619851a9",
                 "shasum": ""
             },
             "require": {
@@ -371,6 +371,7 @@
                     "functions/find_index.php",
                     "functions/flatten.php",
                     "functions/flip.php",
+                    "functions/fold.php",
                     "functions/group_by.php",
                     "functions/gt.php",
                     "functions/gte.php",
@@ -445,7 +446,7 @@
                 }
             ],
             "description": "Utility library embracing functional programming paradigms.",
-            "time": "2019-04-26T06:53:14+00:00"
+            "time": "2019-11-26T10:39:35+00:00"
         },
         {
             "name": "hassankhan/config",
@@ -749,23 +750,24 @@
         },
         {
             "name": "lambdish/phunctional",
-            "version": "v1.0.9",
+            "version": "v2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Lambdish/phunctional.git",
-                "reference": "b5a50d26e3b88e4d0bf706fae3c96411d7f88339"
+                "reference": "d21bf670ef4e1bd5ba7fc94b6cd2ae30053d21b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Lambdish/phunctional/zipball/b5a50d26e3b88e4d0bf706fae3c96411d7f88339",
-                "reference": "b5a50d26e3b88e4d0bf706fae3c96411d7f88339",
+                "url": "https://api.github.com/repos/Lambdish/phunctional/zipball/d21bf670ef4e1bd5ba7fc94b6cd2ae30053d21b4",
+                "reference": "d21bf670ef4e1bd5ba7fc94b6cd2ae30053d21b4",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.6.0"
+                "php": ">=7.2"
             },
             "require-dev": {
-                "phpunit/phpunit": "^5.0"
+                "phpstan/phpstan": "^0.11.16",
+                "phpunit/phpunit": "^8.4"
             },
             "type": "library",
             "autoload": {
@@ -799,7 +801,7 @@
                 "library",
                 "php"
             ],
-            "time": "2019-10-09T10:55:23+00:00"
+            "time": "2019-12-08T23:46:38+00:00"
         },
         {
             "name": "lodash-php/lodash-php",
@@ -996,16 +998,16 @@
         },
         {
             "name": "myclabs/deep-copy",
-            "version": "1.9.4",
+            "version": "1.9.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/myclabs/DeepCopy.git",
-                "reference": "579bb7356d91f9456ccd505f24ca8b667966a0a7"
+                "reference": "b2c28789e80a97badd14145fda39b545d83ca3ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/579bb7356d91f9456ccd505f24ca8b667966a0a7",
-                "reference": "579bb7356d91f9456ccd505f24ca8b667966a0a7",
+                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/b2c28789e80a97badd14145fda39b545d83ca3ef",
+                "reference": "b2c28789e80a97badd14145fda39b545d83ca3ef",
                 "shasum": ""
             },
             "require": {
@@ -1040,7 +1042,7 @@
                 "object",
                 "object graph"
             ],
-            "time": "2019-12-15T19:12:40+00:00"
+            "time": "2020-01-17T21:11:47+00:00"
         },
         {
             "name": "phamda/phamda",
