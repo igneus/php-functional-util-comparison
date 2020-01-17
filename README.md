@@ -51,8 +51,6 @@ This test suite should help find an answer.
     - pros
         - actively maintained
         - `map` callback gets collection index passed
-    - cons
-        - function referencing is awkward (no name constants)
 * [lodash-php/lodash-php](https://github.com/lodash-php/lodash-php)
     - pros
         - actively maintained

@@ -23,7 +23,7 @@ class PhunctionalTest extends BaseTestCase
     public function routes_to_unique_cities(array $input)
     {
         return p\pipe(
-            p\partial('Lambdish\Phunctional\flat_map', function (Route $route) {
+            p\partial(p\flat_map, function (Route $route) {
                 return [$route->getFrom(), $route->getTo()];
             }),
             'array_unique',
@@ -35,7 +35,7 @@ class PhunctionalTest extends BaseTestCase
     {
         return p\pipe(
             p\partial('explode', '\\'),
-            'Lambdish\Phunctional\last',
+            p\last,
             'lcfirst'
         )($className);
     }
@@ -54,11 +54,11 @@ class PhunctionalTest extends BaseTestCase
                     return $i;
                 },
                 p\partial('explode', ':'),
-                p\partial('Lambdish\Phunctional\map', function (string $numStr) {
+                p\partial(p\map, function (string $numStr) {
                     return (int)$numStr;
                 }),
                 'array_reverse',
-                p\partial('Lambdish\Phunctional\map', function (int $num, int $index) {
+                p\partial(p\map, function (int $num, int $index) {
                     return $num * (60 ** $index);
                 }),
                 'array_sum'
