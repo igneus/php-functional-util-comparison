@@ -13,7 +13,7 @@
         "lambdish/phunctional": ">=2.0",
         "codedungeon/phpunit-result-printer": "^0.26.2",
         "kilbiller/fphp": ">=1.0",
-        "grrr-amsterdam/garp-functional": ">=3.0",
+        "grrr-amsterdam/garp-functional": ">=3.1.1",
         "phamda/phamda": ">=0.7.0",
         "krak/fn": ">=1.0",
         "aerophant/ramda": ">=0.0.3",
