@@ -1,5 +1,14 @@
 language: php
 php:
   - '7.2'
-install: composer install
+jobs:
+  include:
+
+    # 1. test that the versions specified in composer.lock pass
+    - install: composer install
+
+    # 2. test that the version constraints in composer.json are correct
+    #    (don't allow versions lower than actually supported)
+    - install: composer update --prefer-lowest
+
 script: vendor/bin/phpunit
