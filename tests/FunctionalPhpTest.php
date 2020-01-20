@@ -3,6 +3,7 @@
 namespace Tests;
 
 use Functional as F;
+use Functional\Functional as FF;
 use Tests\Toys\Route;
 
 /**
@@ -24,7 +25,7 @@ class FunctionalPhpTest extends BaseTestCase
     {
         return F\compose(
             F\partial_right(
-                '\Functional\flat_map', // lack of constants matching function names hurts when composing
+                FF::flat_map, // function names as class constants
                 function (Route $route) {
                     return [$route->getFrom(), $route->getTo()];
                 }
@@ -38,7 +39,7 @@ class FunctionalPhpTest extends BaseTestCase
     {
         return F\compose(
             F\partial_left('explode', '\\'),
-            F\partial_left('\Functional\last'),
+            F\partial_left(FF::last),
             'lcfirst'
         )($className);
     }
@@ -49,12 +50,12 @@ class FunctionalPhpTest extends BaseTestCase
             $timestamps,
             F\compose(
                 F\partial_left('explode', ':'),
-                F\partial_right('Functional\map', function (string $numStr) {
+                F\partial_right(FF::map, function (string $numStr) {
                     // F\partial_right('Functional\map', 'intval') cannot be used, fails on function arity
                     return (int)$numStr;
                 }),
                 'array_reverse',
-                F\partial_right('Functional\map', function (int $num, int $index) { // 'map' with index is useful
+                F\partial_right(FF::map, function (int $num, int $index) { // 'map' with index is useful
                     return $num * (60 ** $index);
                 }),
                 'array_sum'
