@@ -50,10 +50,10 @@ class FunctionalPhpTest extends BaseTestCase
             $timestamps,
             F\compose(
                 F\partial_left('explode', ':'),
-                F\partial_right(FF::map, function (string $numStr) {
-                    // F\partial_right('Functional\map', 'intval') cannot be used, fails on function arity
-                    return (int)$numStr;
-                }),
+                F\partial_right(
+                    FF::map,
+                    F\ary('intval', 1) // ary() prevents passing additional arguments by map()
+                ),
                 'array_reverse',
                 F\partial_right(FF::map, function (int $num, int $index) { // 'map' with index is useful
                     return $num * (60 ** $index);
