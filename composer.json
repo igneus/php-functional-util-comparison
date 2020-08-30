@@ -21,6 +21,9 @@
         "daveross/functional-programming-utils": ">=4.0"
     },
     "autoload": {
+        "files": [
+            "lib/functions.php"
+        ],
         "psr-4": {
             "Tests\\": "tests/"
         }

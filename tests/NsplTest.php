@@ -2,6 +2,7 @@
 
 namespace Tests;
 
+use FunctionalUtilTest\functions as myfunctions;
 use nspl\a;
 use nspl\f;
 use nspl\op;
@@ -58,6 +59,23 @@ class NsplTest extends BaseTestCase
                 'array_sum'
             ),
             $timestamps
+        );
+    }
+
+    public function second_odd_numbers(array $numbers)
+    {
+        $secondOdd = f\compose(
+            function (array $a) {
+                return count($a) >= 2 ? a\second($a) : 1;
+            },
+            f\partial(a\filter, myfunctions\isOdd)
+        );
+
+        return f\pipe(
+            $numbers,
+            f\partial(a\map, $secondOdd),
+            f\rpartial('array_chunk', 2),
+            f\partial(a\map, f\partial(f\apply, op\mul))
         );
     }
 }

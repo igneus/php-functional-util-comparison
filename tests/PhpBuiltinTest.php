@@ -2,7 +2,9 @@
 
 namespace Tests;
 
+use FunctionalUtilTest\functions as myfunctions;
 use Tests\Toys\Route;
+use const Krak\Fun\chunk;
 
 /**
  * For comparison: test cases implemented using only PHP built-in functions and control structures
@@ -49,5 +51,20 @@ class PhpBuiltinTest extends BaseTestCase
             },
             $timestamps
         );
+    }
+
+    public function second_odd_numbers(array $numbers)
+    {
+        $secondOddNumbers = [];
+        foreach ($numbers as $row) {
+            $secondOddNumbers[] = array_values(array_filter($row, myfunctions\isOdd))[1] ?? 1;
+        }
+
+        $result = [];
+        foreach (array_chunk($secondOddNumbers, 2) as $pair) {
+            $result[] = $pair[0] * $pair[1];
+        }
+
+        return $result;
     }
 }
