@@ -55,10 +55,10 @@ abstract class BaseTestCase extends TestCase
     public function test($methodName, $input, $expectedResult)
     {
         if (!method_exists($this, $methodName)) {
-            $this->markTestIncomplete();
+            self::markTestIncomplete();
         }
 
-        $this->assertEquals(
+        self::assertEquals(
             $expectedResult,
             $this->{$methodName}($input)
         );
