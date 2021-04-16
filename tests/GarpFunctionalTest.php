@@ -2,6 +2,7 @@
 
 namespace Tests;
 
+use FunctionalUtilTest\functions as myfunctions;
 use Garp\Functional as f;
 
 use Tests\Toys\Route;
@@ -53,5 +54,22 @@ class GarpFunctionalTest extends BaseTestCase
             ),
             $timestamps
         );
+    }
+
+    public function second_odd_numbers(array $numbers)
+    {
+        $second = f\compose(f\last, f\take(2));
+        $secondOdd = f\compose(
+            function (array $a) use ($second) {
+                return count($a) >= 2 ? $second($a) : 1;
+            },
+            f\filter(myfunctions\isOdd)
+        );
+
+        return f\pipe(
+            f\map($secondOdd),
+            f\partial_right('array_chunk', 2),
+            f\map(f\partial('call_user_func_array', f\multiply))
+        )($numbers);
     }
 }
