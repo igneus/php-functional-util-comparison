@@ -15,7 +15,16 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: ${{ matrix.php-version }}
+
+      # 1. test that the versions specified in composer.lock pass
       - name: Install dependencies
         run: composer install
+      - name: Run tests
+        run: vendor/bin/phpunit
+
+      # 2. test that the version constraints in composer.json are correct
+      #    (don't allow versions lower than actually supported)
+      - name: Install dependencies - lowest versions allowed by constraints in composer.json
+        run: composer update --prefer-lowest
       - name: Run tests
         run: vendor/bin/phpunit
