@@ -4,6 +4,7 @@ namespace Tests;
 
 use Functional as F;
 use Functional\Functional as FF;
+use FunctionalUtilTest\functions as myfunctions;
 use Tests\Toys\Route;
 
 /**
@@ -61,5 +62,37 @@ class FunctionalPhpTest extends BaseTestCase
                 'array_sum'
             )
         );
+    }
+
+    public function second_odd_numbers(array $numbers)
+    {
+        $second = F\compose(
+            'array_values',
+            F\partial_right(FF::pick, 1)
+        );
+
+        $secondOdd = F\compose(
+            F\partial_right(FF::select, myfunctions\isOdd),
+            function (array $a) use ($second) {
+                return count($a) >= 2 ? $second($a) : 1;
+            }
+        );
+
+        return F\compose(
+            F\partial_right(FF::map, $secondOdd),
+            'dump',
+            F\partial_right('array_chunk', 2),
+            'dump',
+            F\partial_right(
+                FF::map,
+                F\ary(  // ary() prevents passing additional arguments by map()
+                    F\partial_left(
+                        'call_user_func_array',
+                        function ($a, $b) { return $a * $b; }
+                    ),
+                    1
+                )
+            )
+        )($numbers);
     }
 }

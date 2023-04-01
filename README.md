@@ -61,6 +61,7 @@ This test suite should help find an answer.
 * [lstrojny/functional-php](https://github.com/lstrojny/functional-php)
     - pros
         - actively maintained
+        - `map` callback gets collection and collection index passed
     - cons
         - function referencing is slightly less convenient (function name constants are not in the same
           namespace as the functions themselves, they are class constants of the `Functional\Functional` class)
