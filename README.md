@@ -1,6 +1,6 @@
 # PHP functional utility libraries - comparison
 
-[![Build Status](https://travis-ci.org/igneus/php-functional-util-comparison.svg?branch=master)](https://travis-ci.org/igneus/php-functional-util-comparison)
+![Build Status](https://github.com/igneus/php-functional-util-comparison/actions/workflows/ci.yml/badge.svg)
 
 Which of the "functional utility libraries" for PHP is
 most powerful/most flexible/most pleasant to work with?
