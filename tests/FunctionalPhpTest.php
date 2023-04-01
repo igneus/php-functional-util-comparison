@@ -80,9 +80,7 @@ class FunctionalPhpTest extends BaseTestCase
 
         return F\compose(
             F\partial_right(FF::map, $secondOdd),
-            'dump',
             F\partial_right('array_chunk', 2),
-            'dump',
             F\partial_right(
                 FF::map,
                 F\ary(  // ary() prevents passing additional arguments by map()
