@@ -8,11 +8,6 @@ This test suite should help find an answer.
 
 ## Libraries compared
 
-* [aerophant/ramda](https://github.com/aerophant/ramda)
-    - pros
-        - all functions curried (solves the problem of easy referencing without name constants)
-    - cons
-        - no documentation
 * [daveross/functional-programming-utils](https://github.com/daveross/functional-programming-utils)
     - pros
     - cons
