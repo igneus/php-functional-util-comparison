@@ -60,11 +60,6 @@ This test suite should help find an answer.
     - cons
         - function referencing is slightly less convenient (function name constants are not in the same
           namespace as the functions themselves, they are class constants of the `Functional\Functional` class)
-* [phamda/phamda](https://github.com/mpajunen/phamda)
-    - pros
-        - all functions curried (solves the problem of easy referencing without name constants)
-    - cons
-        - probably stalled (last commit 2017)
 
 ## Project structure
 
