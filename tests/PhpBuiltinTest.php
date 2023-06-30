@@ -4,7 +4,6 @@ namespace Tests;
 
 use FunctionalUtilTest\functions as myfunctions;
 use Tests\Toys\Route;
-use const Krak\Fun\chunk;
 
 /**
  * For comparison: test cases implemented using only PHP built-in functions and control structures
